@@ -1,0 +1,64 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env/
+
+# ── Environment variables ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Data & models (large files — download separately) ────────────────────────
+data/raw/*
+data/models/*
+data/inventory.db
+!data/raw/.gitkeep
+!data/models/.gitkeep
+!data/knowledge/.gitkeep
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── ML experiment tracking ────────────────────────────────────────────────────
+mlruns/
+wandb/
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+docker-volumes/
+
+# ── Qdrant snapshots ──────────────────────────────────────────────────────────
+*.snapshot
+
+# ── Test artifacts ────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+verify_all.py
